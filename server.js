@@ -11,7 +11,10 @@ import googleRoute from "./routes/googleRegisterRoute.js"
 const app = express()
 dotenv.config()
 app.use(cors({
-    origin: ['https://consulto-zeta.vercel.app','http://localhost:5173','http://localhost:5174'],
+    origin: ['https://consulto-zeta.vercel.app','http://localhost:5173','http://localhost:5174',
+"https://consulto-client.vercel.app"
+
+    ],
     credentials: true
 }))
 const port = process.env.PORT || 3200
